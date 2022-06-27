@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+# REDIRECT NON-WWW TO WWW 
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{HTTP_HOST} ^pay2earn\.store 
+</IfModule>
